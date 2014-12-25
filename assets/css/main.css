@@ -81,7 +81,7 @@ a:after {
 .navbar {
 	font-weight: 800;
 	font-size: 14px;
-	padding-top: 15px;
+	padding-top: 5px;
 	padding-bottom: 5px;
 	background-color: #ffffff;
 
@@ -100,8 +100,7 @@ a:after {
 .btn-6d {
     border: 1.5px solid #828B94;
     background: transparent;
-   padding: 20px 60px;
-   margin-right: -70px;
+   padding: 9px 50px;
    font-size: 1.1em;
    outline:0;
    transition:all 0.3s;
@@ -149,50 +148,19 @@ box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
 
 img.logo{
 
-	max-width: 190px;
+	max-width: 130px;
 }
 
 ul.nav.navbar-nav.navbar-right {
 font-family: 'Raleway', sans-serif;
-font-size: 1.5em;
+font-size: 1.2em;
 text-transform: lowercase;
     font-weight: normal;
     font-style: normal;
 }
 li{
-  margin: 7px 35px;
+  margin: 0px 9px;
 }
-@media (max-width: 767px){
-
-	.btn-6d {
-		margin-right: 0px;
-
-	}
-}
-@media (min-width:768px) and (max-width:991px){
-	.navbar > .container .navbar-brand {
-		margin-left: -80px;
-	}
-	li{
-  		margin: 0px -5px;
-    }
-}
-
-@media (min-width:992px) and (max-width:1199px){
-	.navbar > .container .navbar-brand {
-			margin-left: -40px;
-	}
-	li{
-  		margin: 5px 15px;
-    }
-}
-@media (min-width:1200px){
-	.navbar > .container .navbar-brand {
-			margin-left: -60px;
-	}
-	
-}
-
 .no-padding{
 	padding:0;
 }
@@ -200,12 +168,27 @@ li{
 	margin:0;
 }
 #intro { 
-	background: url(../img/CoverPhoto.jpg) 70% 0 fixed no-repeat; 
+	background: url(../img/traveller.jpg) 70% 0 fixed no-repeat; 
 	background-size: cover;
 	height: 700px;  
 	margin: 0 auto; 
     width: 100%; 
+    margin-top:-10px;
     position: relative; 
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
     padding: 100px 0;
+}
+@media(max-width:767px){
+
+	btn-6d{
+		margin-left:0;
+	}
+}
+@media(min-width:768px)and(max-width:991px){
+	.navbar > .container .navbar-brand {
+		margin-left: -35px;
+		}
+}
+.navbar-default .navbar-nav > li > a {
+color: #252323;
 }
