@@ -5,7 +5,7 @@
 /* OVERALL ASPECT */
 
 body {
-  background-color: #f2f2f2;
+  background-color: #fff;
     font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
@@ -83,8 +83,7 @@ a:after {
 	font-size: 14px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: #ffffff;
-
+    background-color:rgba(255, 255, 255, 1);
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -193,19 +192,23 @@ li{
 #intro { 
 	background: url(../img/traveller.jpg) 70% 0 fixed no-repeat; 
 	background-size: cover;
-	height: 700px;  
+	height: 600px;  
 	margin: 0 auto; 
     width: 100%; 
     margin-top:-10px;
     position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 2px -14px 180px 30px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px -14px 180px 30px rgba(0,0,0,0.75);
+box-shadow: 2px -14px 180px 30px rgba(0,0,0,0.75);
+
     padding: 100px 0;
 }
 @media(max-width:767px){
 
-	btn-6d{
-		margin-left:0;
-	}
+    .btn-6d-logo{
+        margin-left:0;
+        padding:10px 10px;
+    }
 }
 @media(min-width:768px)and(max-width:991px){
 	.navbar > .container .navbar-brand {
@@ -234,4 +237,32 @@ color: #252323;
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.scary{
+    font-family: 'Raleway',sans-serif;
+    font-size: 3.2em ;
+}
+.help{
+    font-family: 'Raleway',sans-serif;
+    font-size: 3.5em ;
+    font-weight: bolder;
+}
+.tmd-int{
+    font-family: 'Raleway',sans-serif;
+    font-size: 1.2em ;
+    padding-bottom:2em;
+
+}
+#intro-1 { 
+    background: url(../img/traveller.jpg) 70% 0 fixed no-repeat; 
+    background-size: cover;
+    height: 400px;  
+    margin: 0 auto; 
+    width: 100%; 
+    /*margin-top:-10px;*/
+    position: relative; 
+    -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+    /*padding: 100px 0;*/
 }

@@ -39,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img class='logo' src="assets/img/tmd_small.png" alt=""></i></a>
+          <a class="navbar-brand" href="#"><img class='logo' src="http://omega.tripmd.com/assets/logo-black-043ab674d87690ecdecae9b0195a5a3c.png" alt=""></i></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right centered">
@@ -54,14 +54,15 @@
 
 
 		<!-- Section #1 -->
-	<section id="intro" data-speed="6" data-type="background" class="img-responsive">
-		<div class="container">
+	<section id="intro" data-speed="6" data-type="background" >
+		<div class="container img-responsive">
 	    	<div class='row'>
 				<div class='col-lg-12 centered'>
 					<div class='intro-message' >
 						<h2 class="imgtext">Access a trusted doctor.<br> Anywhere in the world.</h2>
 						<!-- %h3 Healthcare overseas doesn’t have to be -->
 						<!-- %hr.intro-divider -->
+						<br><br>
 						<button class='btn-6d-logo'>
 						signup to reserve a spot
 						</button>
@@ -73,52 +74,47 @@
 	</section>
 <div class='content-section-a'>
 	<div class='container'>
-		<div class='row'>
-			<div class='col-lg-5 col-sm-6'>
-				<h3 class='section-heading'>
-					The TripMD initiative.
-				</h3>
-				
+		<div class='row centered'>
+			<div class='col-lg-12 '>
+				<br>
+				<div class="scary">
+					Getting sick overseas is scary.
+				</div>
+				<div class="help">
+					We’re here to help.
+				</div>
+			</div>
+		</div>
+		<div class="row centered">
+			<div class='col-lg-6  col-lg-offset-3 tmd-int' >
+				Between finding a doctor, language barriers and complicated
+				insurance, we know how unsettling it is to be sick in a foreign
+				country. We believe you should have the same confidence in your
+				healthcare abroad as you would at home. It starts with our
+				<br><b>trusted doctor network.</b>
 			</div>	
 		</div>
 	</div>
 </div>
-	<div class="home">
+	<section id="intro-1" data-speed="6" data-type="background" class="img-responsive">
 		<div class="container">
-			<div class="row-fluid">
-		        <div class="span4">
-		          <h2>Heading</h2>
-		          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
-		         
-		        </div><!-- /.span4 -->
-		        <div class="span4">
-		          <h2>Heading</h2>
-		          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-		          
-		        </div><!-- /.span4 -->
-		        <div class="span4">
-		          <h2>Heading</h2>
-		          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum odio, dapibus ac in, massa justo sit amet.</p>
-		          
-		        </div><!-- /.span4 -->
-		         <div class="span4">
-		          <h2>Heading</h2>
-		          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
-		         
-		        </div><!-- /.span4 -->
-		        <div class="span4">
-		          <h2>Heading</h2>
-		          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-		          
-		        </div><!-- /.span4 -->
-		        <div class="span4">
-		          <h2>Heading</h2>
-		          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum odio, dapibus ac in, massa justo sit amet.</p>
-		          
-		        </div><!-- /.span4 -->
-	    	</div>
+	    	<div class='row'>
+				<div class='col-lg-12 centered'>
+					<div class='intro-message' >
+						<h2 class="imgtext">Access a trusted doctor.<br> Anywhere in the world.</h2>
+						<!-- %h3 Healthcare overseas doesn’t have to be -->
+						<!-- %hr.intro-divider -->
+						<br><br>
+						<button class='btn-6d-logo'>
+						signup to reserve a spot
+						</button>
+						<br>
+					</div>
+				</div>
+			</div>
 	    </div>
-	</div>
+	</section>
+	<br><br>
 	
     <script>
     $('.navbar').scrollupbar();
@@ -126,24 +122,54 @@
    // cache the window object
    $window = $(window);
  
-   $('section[data-type="background"]').each(function(){
+   		$('section[data-type="background"]').each(function(){
      // declare the variable to affect the defined data-type
-     var $scroll = $(this);
-                     
-      $(window).scroll(function() {
-        // HTML5 proves useful for helping with creating JS functions!
-        // also, negative value because we're scrolling upwards                             
-        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
-         
-        // background position
-        var coords = '70% '+ yPos + 'px';
- 
-        // move the background
-        $scroll.css({ backgroundPosition: coords });    
-      }); // end window scroll
-   });  // end section function
-}); // close out script
+	   		var $scroll = $(this);
+	                     
+	      	$(window).scroll(function() {
+	        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
+	        var coords = '70% '+ yPos + 'px';
+	        $scroll.css({ backgroundPosition: coords });    
+      		}); 
+   		}); 
+	});
+    var target = $('.navbar');
+var targetHeight = target.outerHeight();
+
+		$(document).scroll(function(e){
+		    var scrollPercent = (targetHeight - window.scrollY) / targetHeight;
+		    if(scrollPercent >= 0){
+		        target.css('background-color', 'rgba(255, 255, 255, 1)');
+		    }
+		    else  target.css('background-color', 'rgba(255, 255, 255, 0.6)');
+		});
     </script>
     <script src="assets/js/bootstrap.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+<script>
+$(function(){	
+
+        var $window = $(window);
+	var scrollTime = 1.2;
+	var scrollDistance = 170;
+
+	$window.on("mousewheel DOMMouseScroll", function(event){
+
+		event.preventDefault();	
+
+		var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+		var scrollTop = $window.scrollTop();
+		var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+
+		TweenMax.to($window, scrollTime, {
+			scrollTo : { y: finalScroll, autoKill:true },
+				ease: Power1.easeOut,
+				overwrite: 5							
+			});
+
+	});
+});
+</script>
   </body>
 </html>
