@@ -118,6 +118,29 @@ a:after {
 -moz-box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
 box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
 }
+.btn-6d-logo {
+    border: 3px solid #fff;
+    background: transparent;
+   padding: 20px 60px;
+   font-size: 2em;
+   outline:0;
+   color:#fff;
+   transition:all 0.3s;
+}
+ 
+.btn-6d-logo:hover {
+    background: rgb( 28, 132, 153);
+   	border: 3px solid rgb( 28, 132, 153);
+    color:#fff;
+    outline:0;
+
+}
+.btn-6d-logo:active{
+border: medium solid transparent;
+	 -webkit-box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
+box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
+}
 
 .lead {
 	letter-spacing: 1px;
@@ -191,4 +214,24 @@ li{
 }
 .navbar-default .navbar-nav > li > a {
 color: #252323;
+}
+.imgtext{
+	font-family: 'Raleway',sans-serif;
+	font-size: 3em;
+	color:#fff;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
