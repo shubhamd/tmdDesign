@@ -121,14 +121,14 @@ a:after {
 box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
 }
 .btn-6d-doc {
-   border: 3px solid #fff;
-    background: transparent;
-   padding: 20px 60px;
-   font-size: 2em;
-   margin-top:3em;
-   outline:0;
-   color:#fff;
-   transition:all 0.3s;
+   border: 3px solid #615656;
+background: transparent;
+padding: 20px 60px;
+font-size: 2em;
+margin-top: 3em;
+outline: 0;
+color: #2A1919;
+transition: all 0.3s;
 }
  
 .btn-6d-doc:hover {
@@ -277,23 +277,14 @@ color: #252323;
     font-size: 1.2em ;
     padding-bottom:2em;
     font-weight: 400;
+    line-height: 2em;
+}
 
-}
-#intro-1 { 
-    background: url(../img/bg.jpg) 70% 0 fixed repeat; 
-    background-size: cover;
-    height: 400px;  
-    margin: 0 auto; 
-    width: 100%; 
-    /*margin-top:-10px;*/
-    position: relative; 
-  
-    /*padding: 100px 0;*/
-}
 .ext-padding{
 
     padding-bottom:2em;
     text-align: left;
+    line-height: 2em;
 }
 .bgicn{
     max-width: 200px;
@@ -331,4 +322,29 @@ padding-left: 3em;
         margin-top: 2em;
         padding-left: 3em;
     }
+}
+
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+.fullscreen,
+.content-a {
+    width:100%;
+    min-height:100%;
+}
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {
+    height:100%;
+    overflow:hidden;
+}
+#intro-1{
+
+    height:400px;
 }
