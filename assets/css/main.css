@@ -1,19 +1,22 @@
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
 
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(WXRs6bFZChfzCx3pXob5o_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 /* OVERALL ASPECT */
 
 body {
   background-color: #fff;
-    font-family: "Lato";
+    font-family: "Raleway";
     font-weight: 300;
     font-size: 16px;
     color: #555;
-
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
-    
     margin-top: 70px;
 }
 
@@ -41,7 +44,7 @@ p {
 
 /* Links */
 a {
-    color: #f85c37;
+    color: #fff;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -216,7 +219,7 @@ li{
 #intro { 
 	background: url(../img/traveller.jpg) 70% 0 fixed no-repeat; 
 	background-size: cover;
-	height: 600px;  
+	height: 700px;  
 	margin: 0 auto; 
     width: 100%; 
     margin-top:-10px;
@@ -301,17 +304,31 @@ color: #252323;
 .voffset3 { margin-top: 15px; }
 .voffset4 { margin-top: 30px; }
 .voffset5 { margin-top: 40px; }
-.voffset6 { margin-top: 70px; padding-left: 3em;}
+.voffset6 {
+margin-top: 5em;
+padding-left: 3em;
+}
 .voffset7 { margin-top: 80px; }
 .voffset8 { margin-top: 100px; }
 .voffset9 { margin-top: 150px; }
 .blue-grad{
-    background: #7db9e8; 
-    background: -moz-linear-gradient(top,  #7db9e8 0%, #2989d8 100%);
+    background: #fff; 
+    background: -moz-linear-gradient(top,  #fff 0%, #2989d8 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(100%,#2989d8)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #7db9e8 0%,#2989d8 100%);
-    background: -o-linear-gradient(top,  #7db9e8 0%,#2989d8 100%); 
-    background: -ms-linear-gradient(top,  #7db9e8 0%,#2989d8 100%); 
-    background: linear-gradient(to bottom,  #7db9e8 0%,#2989d8 100%); 
+    background: -webkit-linear-gradient(top,  #fff 0%,#2989d8 100%);
+    background: -o-linear-gradient(top,  #fff 0%,#2989d8 100%); 
+    background: -ms-linear-gradient(top,  #fff 0%,#2989d8 100%); 
+    background: linear-gradient(to bottom,  #fff 0%,#2989d8 100%); 
     margin:0;
     }
+
+.container.img-responsive.feat{
+
+    font-weight:800;
+}
+@media(max-width:767px){
+    .voffset6 {
+        margin-top: 2em;
+        padding-left: 3em;
+    }
+}
