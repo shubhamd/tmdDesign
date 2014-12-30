@@ -348,3 +348,8 @@ padding-left: 3em;
 
     height:400px;
 }
+.section-heading-spacer {
+
+width: 40%;
+border-top: 2px solid #e7e7e7;
+}
