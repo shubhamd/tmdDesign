@@ -40,7 +40,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img class='logo' src="assets/img/logo.png" alt=""></i></a>
+          <a class="navbar-brand" href="#"><img class='logo' src="assets/img/tmd_small.png" alt=""></i></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right centered">
@@ -145,14 +145,14 @@ Facilities
 		
 	</div>
 </div>
-	<section id="intro-1" data-speed="6" data-type="background" class="fullscreen background parallax img-responsive" style="background-image:url('assets/img/doc.jpg');" data-img-width="1600" data-img-height="1500" data-diff="100">
+	<section id="intro-1" data-speed="6" data-type="background1" class="fullscreen background parallax img-responsive" style="background-image:url('assets/img/doc.jpg');" data-img-width="1600" data-img-height="1500" data-diff="100">
 		<div class="container img-responsive">
 	    	<div class='row'>
 				<div class='col-lg-12 centered'>
 					<div class='intro-message' >
 						<br><br>
 						<button class='btn-6d-doc'>
-						Meet our Doctors
+						How it works
 						</button>
 						<br>
 					</div>
@@ -169,6 +169,7 @@ Facilities
 					
 				</div>
 				<div class="col-lg-4 voffset6 ">
+					<h2>24/7 Support</h2>
 					You can count on us
 					around the clock if
 					you need
@@ -184,6 +185,7 @@ Facilities
 					
 				</div>
 				<div class="col-lg-4 voffset6 ">
+					<h2>Online Medical Records</h2>
 					It’s important to have
 					your medical
 					history easily
@@ -204,7 +206,8 @@ Facilities
 					<img src="assets/img/abc2.png" class="bgicn center-block img-responsive">
 					
 				</div>
-				<div class="col-lg-4 voffset6 ">
+				<div class="col-lg-4 voffset6 ">										<h2>Online Bookings</h2>
+
 					Schedule an
 					appointment with a
 					doctor in the TripMD
@@ -218,6 +221,7 @@ Facilities
 					
 				</div>
 				<div class="col-lg-4 voffset6 ">
+					<h2>Insurance Support</h2>
 					Dealing with your
 					insurance while
 					abroad can be
@@ -275,164 +279,9 @@ Facilities
 		</div>
 	</div>
 </div>	
-	
-
-	
-    <script>
-    $('.navbar').scrollupbar();
-    $(document).ready(function(){
-   // cache the window object
-   $window = $(window);
- 
-   		$('section[data-type="background"]').each(function(){
-     // declare the variable to affect the defined data-type
-	   		var $scroll = $(this);
-	                     
-	      	$(window).scroll(function() {
-	        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
-	        var coords = '70% '+ yPos + 'px';
-	        $scroll.css({ backgroundPosition: coords });    
-      		}); 
-   		}); 
-	});
-    var target = $('.navbar');
-var targetHeight = target.outerHeight();
-
-		$(document).scroll(function(e){
-		    var scrollPercent = (targetHeight - window.scrollY) / targetHeight;
-		    if(scrollPercent >= 0){
-		        target.css('background-color', 'rgba(255, 255, 255, 1)');
-		    }
-		    else  target.css('background-color', 'rgba(255, 255, 255, 0.6)');
-		});
-    </script>
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/TweenMax.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/TweenMax.min.js"></script>
 <script src="assets/js/ScrollToPlugin.min.js"></script>
-<script>
-$(function(){	
-
-        var $window = $(window);
-	var scrollTime = 1.2;
-	var scrollDistance = 170;
-
-	$window.on("mousewheel DOMMouseScroll", function(event){
-
-		event.preventDefault();	
-
-		var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-		var scrollTop = $window.scrollTop();
-		var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-
-		TweenMax.to($window, scrollTime, {
-			scrollTo : { y: finalScroll, autoKill:true },
-				ease: Power1.easeOut,
-				overwrite: 5							
-			});
-
-	});
-});
-/* detect touch */
-if("ontouchstart" in window){
-    document.documentElement.className = document.documentElement.className + " touch";
-}
-if(!$("html").hasClass("touch")){
-    /* background fix */
-    $(".parallax").css("background-attachment", "fixed");
-}
-
-/* fix vertical when not overflow
-call fullscreenFix() if .fullscreen content changes */
-function fullscreenFix(){
-    var h = $('body').height();
-    // set .fullscreen height
-    $(".content-b").each(function(i){
-        if($(this).innerHeight() <= h){
-            $(this).closest(".fullscreen").addClass("not-overflow");
-        }
-    });
-}
-$(window).resize(fullscreenFix);
-fullscreenFix();
-
-/* resize background images */
-function backgroundResize(){
-    var windowH = $(window).height();
-    $(".background").each(function(i){
-        var path = $(this);
-        // variables
-        var contW = path.width();
-        var contH = path.height();
-        var imgW = path.attr("data-img-width");
-        var imgH = path.attr("data-img-height");
-        var ratio = imgW / imgH;
-        // overflowing difference
-        var diff = parseFloat(path.attr("data-diff"));
-        diff = diff ? diff : 0;
-        // remaining height to have fullscreen image only on parallax
-        var remainingH = 0;
-        if(path.hasClass("parallax") && !$("html").hasClass("touch")){
-            var maxH = contH > windowH ? contH : windowH;
-            remainingH = windowH - contH;
-        }
-        // set img values depending on cont
-        imgH = contH + remainingH + diff;
-        imgW = imgH * ratio;
-        // fix when too large
-        if(contW > imgW){
-            imgW = contW;
-            imgH = imgW / ratio;
-        }
-        //
-        path.data("resized-imgW", imgW);
-        path.data("resized-imgH", imgH);
-        path.css("background-size", imgW + "px " + imgH+200 + "px");
-    });
-}
-//$(window).resize(backgroundResize);
-//$(window).focus(backgroundResize);
-//backgroundResize();
-
-/* set parallax background-position */
-function parallaxPosition(e){
-    var heightWindow = $(window).height();
-    var topWindow = $(window).scrollTop();
-    var bottomWindow = topWindow + heightWindow;
-    var currentWindow = (topWindow + bottomWindow) / 2;
-    $(".parallax").each(function(i){
-        var path = $(this);
-        var height = path.height();
-        var top = path.offset().top;
-        var bottom = top + height;
-        // only when in range
-        if(bottomWindow > top && topWindow < bottom){
-            var imgW = path.data("resized-imgW");
-            var imgH = path.data("resized-imgH");
-            // min when image touch top of window
-            var min = 0;
-            // max when image touch bottom of window
-            var max = - imgH + heightWindow;
-            // overflow changes parallax
-            var overflowH = height < heightWindow ? imgH - height : imgH - heightWindow; // fix height on overflow
-            top = top - overflowH;
-            bottom = bottom + overflowH;
-            // value with linear interpolation
-            var value = min + (max - min) * (currentWindow - top) / (bottom - top);
-            // set background-position
-            var orizontalPosition = path.attr("data-oriz-pos");
-            orizontalPosition = orizontalPosition ? orizontalPosition : "50%";
-            $(this).css("background-position", orizontalPosition + " " + value + "px");
-        }
-    });
-}
-if(!$("html").hasClass("touch")){
-    $(window).resize(parallaxPosition);
-    //$(window).focus(parallaxPosition);
-    $(window).scroll(parallaxPosition);
-    parallaxPosition();
-}
-
-
-</script>
+<script src="assets/js/main.js"></script>
   </body>
 </html>
