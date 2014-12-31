@@ -1,10 +1,9 @@
 
-@import url(http://fonts.googleapis.com/css?family=Raleway);
-/* OVERALL ASPECT */
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,200,100);/* OVERALL ASPECT */
 
 body {
   background-color: #fff;
-    font-family: "Raleway"!important;
+    font-family: "Raleway",sans-serif !important;
     font-weight: 300;
     font-size: 16px;
     color: #555;
