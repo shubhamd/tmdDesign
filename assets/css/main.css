@@ -269,7 +269,7 @@ color: #252323;
     font-family: 'Raleway',sans-serif;
     font-size: 1.2em ;
     padding-bottom:2em;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 2em;
 }
 
@@ -363,5 +363,6 @@ border-top: 2px solid #e7e7e7;
     }
 }
 .col-lg-4.voffset6 {
+    font-weight: 300;
 line-height: 1.6em;
 }
