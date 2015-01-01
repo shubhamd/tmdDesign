@@ -161,6 +161,24 @@ box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
 -webkit-appearance:none;
 }
 
+.btn-6d-logo-about {
+   border: 3px solid rgb( 28, 132, 153);
+   background: rgb( 28, 132, 153);
+   padding: 20px 60px;
+   font-size: 2em;
+   outline:0;
+   color:#fff;
+   transition:all 0.3s;
+}
+
+.btn-6d-logo-about:active{
+border: medium solid transparent;
+     -webkit-box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
+box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
+-webkit-appearance:none;
+}
+
 .lead {
     letter-spacing: 1px;
 }
@@ -294,7 +312,8 @@ padding-left: 3em;
 }
 .voffset7 { margin-top: 80px; }
 .voffset8 { margin-top: 100px; }
-.voffset9 { margin-top: 150px; }
+.voffset8p { margin-top: 4%; }
+.voffset9 { margin-top: 200px; }
 .blue-grad{
     background: #fff; 
     background: -moz-linear-gradient(top,  #fff 0%, #2989d8 100%);
@@ -365,4 +384,67 @@ border-top: 2px solid #e7e7e7;
 .col-lg-4.voffset6 {
     font-weight: 300;
 line-height: 1.6em;
+}
+.foo-black a{
+    list-style-type: none;
+    color: #000;
+}
+.foo-black a:hover{
+    list-style-type: none;
+}
+.left-centered{
+    text-align: left;
+}
+.help-about{
+    color: rgb( 28, 132, 153);
+    font-size: 3.2em ;
+    font-weight: bolder;
+}
+.team{
+    font-size: 2em;
+    margin-left: -20px;
+
+}
+.darrow{
+    max-width: 40px;
+}
+.t-left{
+    text-align: left;
+    font-family: 'Raleway',sans-serif;
+    font-size: 1.09em;
+    padding-bottom: 2em;
+    line-height: 1.6em;
+}
+.name{
+    color: rgb( 28, 132, 153);
+}
+.titl{
+    font-size: 1.6em;
+
+}
+.tmd-int-1{
+    font-size: 1.3em ;
+    color: rgb( 28, 132, 153);
+    padding-bottom:2em;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+a u{
+    color: rgb( 28, 132, 153);
+}
+#intro-2 { 
+    background: url(http://webtest.cnsrisk.com/wp-content/uploads/2013/06/Delhi-Street-e1371908175916-1024x7681.jpg) 70% 0 fixed no-repeat; 
+    background-size: cover;
+    height: 700px;  
+    margin: 0 auto; 
+    width: 100%; 
+    margin-top:-10px;
+    position: relative; 
+   
+    padding: 100px 0;
+}
+.imgtx{
+    font-size: 1.3em;
+    padding: 30px;
+    background: rgba(255,255,255,0.8);
 }
