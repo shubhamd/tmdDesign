@@ -238,14 +238,6 @@ li{
    
     padding: 100px 0;
 }
-@media(max-width:767px){
-
-    .btn-6d-logo{
-        margin-left:0;
-        padding:10px 10px;
-    }
-
-}
 @media(min-width:768px)and(max-width:991px){
     .navbar > .container .navbar-brand {
         margin-left: -35px;
@@ -377,8 +369,15 @@ border-top: 2px solid #e7e7e7;
         margin-top: 2em;
         padding-left: 3em;
     }
+    .voffset9 {
+        margin-top: 10px;
+    }
     .centeredh{
         text-align: center;
+    }
+    .btn-6d-logo{
+        margin-left:0;
+        padding:10px 10px;
     }
 }
 .col-lg-4.voffset6 {
