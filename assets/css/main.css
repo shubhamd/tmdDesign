@@ -452,3 +452,6 @@ a u{
     padding: 30px;
     background: rgba(255,255,255,0.8);
 }
+.resize{
+    min-height: 191px;
+}
