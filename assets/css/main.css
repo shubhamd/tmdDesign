@@ -142,14 +142,15 @@ box-shadow: inset 2px 3px 74px 0px rgba(0,0,0,0.75);
      
 }
 .btn-6d-logo {
-    border: 3px solid #fff;
-    background: transparent;
-   padding: 20px 60px;
-   font-size: 2em;
-   outline:0;
-   color:#fff;
-   transition:all 0.3s;
+border: 2px solid #fff;
+background: transparent;
+padding: 10px 50px;
+font-size: 1.5em;
+outline: 0;
+color: #fff;
+transition: all 0.3s;
 }
+
  
 .btn-6d-logo:hover {
     background: rgb( 28, 132, 153);
@@ -238,7 +239,7 @@ li{
     height: 700px;  
     margin: 0 auto; 
     width: 100%; 
-    margin-top:-10px;
+    margin-top:-30px;
     position: relative; 
    
     padding: 100px 0;
@@ -271,22 +272,25 @@ color: #252323;
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
-.scary{
+.scary {
     font-family: 'Raleway',sans-serif;
-    font-size: 3.2em ;
+    font-size: 2.5em;
+    padding-top: 50px;
 }
-.help{
+.help {
     font-family: 'Raleway',sans-serif;
-    font-size: 3.5em ;
+    font-size: 3.0em;
     font-weight: bolder;
 }
-.tmd-int{
+.tmd-int {
     font-family: 'Raleway',sans-serif;
-    font-size: 1.2em ;
-    padding-bottom:2em;
+    font-size: 1.2em;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
     font-weight: 400;
     line-height: 2em;
 }
+
 
 .ext-padding{
 
@@ -362,9 +366,9 @@ border-top: 2px solid #e7e7e7;
     color:#fff;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
-.trusted{
-
-    font-size: 2.7em ;
+.trusted {
+    font-size: 2.0em;
+    padding-bottom: 1.5em;
 }
 .centeredh{
     text-align: left;
@@ -453,5 +457,5 @@ a u{
     background: rgba(255,255,255,0.8);
 }
 .resize{
-    min-height: 191px;
+    max-height: 142.5px;
 }
