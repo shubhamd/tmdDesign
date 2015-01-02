@@ -53,12 +53,4 @@ $('.navbar').scrollupbar();
       		}); 
    		}); 
 	});
-	window.onresize = function(e){
-		if(window.innerHeight>h)
-		$('#intro').css({ 'height': window.innerHeight + "px" });
-		else
-		$('#intro').css({ 'height': h + "px" });
-
-		console.log("height is "+window.innerHeight);	
-	}
 	
