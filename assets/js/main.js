@@ -20,12 +20,13 @@ $(function(){
 
 	});
 });
+var h=window.innerHeight;
 $('.navbar').scrollupbar();
     $(document).ready(function(){
    // cache the window object
    $window = $(window);
- 
-   		$('section[data-type="background"]').each(function(){
+ 	
+   		$('div[data-type="background"]').each(function(){
      // declare the variable to affect the defined data-type
 	   		var $scroll = $(this);
 	                     
@@ -52,3 +53,12 @@ $('.navbar').scrollupbar();
       		}); 
    		}); 
 	});
+	window.onresize = function(e){
+		if(window.innerHeight>h)
+		$('#intro').css({ 'height': window.innerHeight + "px" });
+		else
+		$('#intro').css({ 'height': h + "px" });
+
+		console.log("height is "+window.innerHeight);	
+	}
+	
