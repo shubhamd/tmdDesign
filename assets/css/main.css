@@ -417,10 +417,13 @@ line-height: 1.6em;
 .name{
     color: rgb( 28, 132, 153);
 }
-.titl{
-    font-size: 1.6em;
 
+.titl {
+font-size: 1.6em;
+padding-bottom: 20px;
 }
+
+
 .tmd-int-1{
     font-size: 1.3em ;
     color: rgb( 28, 132, 153);
