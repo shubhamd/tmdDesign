@@ -294,9 +294,11 @@ color: #252323;
 
 .ext-padding{
 
-    padding-bottom:2em;
+    padding-bottom:6em;
     text-align: left;
     line-height: 2em;
+    margin-left: 11%;
+    margin-right: 11%;
 }
 .bgicn{
     max-width: 200px;
@@ -375,22 +377,7 @@ padding-bottom: 1.5em;
 
 font-size: 22px !important;
 }
-@media(max-width:767px){
-    .voffset6 {
-        margin-top: 2em;
-        padding-left: 3em;
-    }
-    .voffset9 {
-        margin-top: 10px;
-    }
-    .centeredh{
-        text-align: center;
-    }
-    .btn-6d-logo{
-        margin-left:0;
-        padding:10px 10px;
-    }
-}
+
 .col-lg-4.voffset6 {
     font-weight: 300;
 line-height: 1.6em;
@@ -464,4 +451,23 @@ margin-left: 0;
 }
 .padding-bt{
     padding-bottom:40px;
+}
+@media(max-width:767px){
+    .voffset6 {
+        margin-top: 2em;
+        padding-left: 3em;
+    }
+    .voffset9 {
+        margin-top: 10px;
+    }
+    .centeredh{
+        text-align: center;
+    }
+    .btn-6d-logo{
+        margin-left:0;
+        padding:10px 10px;
+    }
+    .resize{
+        margin:auto;
+    }
 }
