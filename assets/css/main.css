@@ -79,17 +79,20 @@ a:after {
     padding-top: 5px;
     padding-bottom: 5px;
     background-color:rgba(255, 255, 255, 1);
+
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #ffffff;
     background-color: #74cfae;
+
 }
 
 .navbar-brand {
     font-size: 60px;
     padding-top: 0px;
     padding-bottom: 0px;
+
 }
 .btn-6d {
     border: 1.5px solid #828B94;
@@ -113,32 +116,29 @@ a:after {
 box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
 }
 .btn-6d-doc {
-   border: none;
-background: transparent;
-padding: 20px 60px;
-font-size: 2em;
-margin-top: 3em;
-font-weight: bold ;
-outline: 0;
-color: #2A1919;
 
-     -webkit-box-shadow: inset 2px 3px 74px 0px rgba( 28, 132, 153,0.75);
--moz-box-shadow: inset 2px 3px 74px 0px rgba( 28, 132, 153,0.75);
-box-shadow: inset 2px 3px 74px 0px rgba( 28, 132, 153,0.75);
+   border: 2px solid #000;
+background: transparent;
+padding: 10px 50px;
+font-size: 1.5em;
+outline: 0;
+margin-top:5em;
+color: #000;
 transition: all 0.3s;
 }
  
 .btn-6d-doc:hover {
-    background: rgb( 28, 132, 153);
-   border: none;
+   background: rgb( 28, 132, 153);
+    border: 2px solid rgb( 28, 132, 153);
     color:#fff;
     outline:0;
-    -webkit-box-shadow: none;
--moz-box-shadow: inset 2px 3px 74px 0px rgba(0,0,0,0.75);
-box-shadow: inset 2px 3px 74px 0px rgba(0,0,0,0.75);
 }
 .btn-6d-doc:active{
-
+border: 2px solid transparent;
+     -webkit-box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
+box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
+-webkit-appearance:none;
      
 }
 .btn-6d-logo {
@@ -220,9 +220,10 @@ img.logo{
 ul.nav.navbar-nav.navbar-right {
 font-family: 'Raleway', sans-serif;
 font-size: 1.2em;
-text-transform: lowercase;
+
     font-weight: normal;
     font-style: normal;
+    
 }
 li{
   margin: 0px 9px;
