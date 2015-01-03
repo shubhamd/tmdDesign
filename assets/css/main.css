@@ -95,12 +95,13 @@ a:after {
 
 }
 .btn-6d {
-    border: 1.5px solid #828B94;
-    background: transparent;
-   padding: 9px 50px;
-   font-size: 1.1em;
-   outline:0;
-   transition:all 0.3s;
+border: 1.5px solid #828B94 ;
+margin-top: 7px;
+background: transparent;
+padding: 4px 40px;
+font-size: 1.0em;
+outline: 0;
+transition: all 0.3s;
 }
  
 .btn-6d:hover {
@@ -311,7 +312,7 @@ color: #252323;
 .voffset4 { margin-top: 30px; }
 .voffset5 { margin-top: 40px; }
 .voffset6 {
-margin-top: 1em;
+margin-top: .3em;
 padding-left: 1.3em;
 }
 .voffset7 { margin-top: 80px; }
@@ -462,17 +463,24 @@ margin-left: 0;
     padding-bottom: 2em;
 }
 
+@media(max-width:1199px){
+
+}   
 
 
 
-
-
+.network{
+    font-size: 1.8em;
+    font-weight: normal;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
 
 
 @media(max-width:767px){
-    .voffset6 {
-        margin-top: 2em;
-        padding-left: 3em;
+    .ext-padding{
+        margin-right: 0;
+        margin-left: 0;
     }
     .voffset9 {
         margin-top: 10px;
