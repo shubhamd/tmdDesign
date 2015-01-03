@@ -398,6 +398,7 @@ line-height: 1.6em;
     color: rgb( 28, 132, 153);
     font-size: 3.2em ;
     font-weight: bolder;
+    padding-bottom: 2em;
 }
 .team{
     font-size: 2em;
@@ -437,7 +438,7 @@ a u{
     height: 700px;  
     margin: 0 auto; 
     width: 100%; 
-    margin-top:-10px;
+    margin-top:10px;
     position: relative; 
    
     padding: 100px 0;
