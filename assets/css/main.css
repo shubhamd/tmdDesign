@@ -372,7 +372,7 @@ padding-bottom: 1.5em;
 }
 .centeredh{
     text-align: left;
-margin-left: 1.8em;
+
 font-size: 22px !important;
 }
 @media(max-width:767px){
@@ -460,7 +460,7 @@ a u{
 }
 .resize{
     max-height: 120px;
-margin-left: 2em;
+margin-left: 0;
 }
 .padding-bt{
     padding-bottom:40px;
