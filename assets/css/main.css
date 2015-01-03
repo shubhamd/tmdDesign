@@ -122,9 +122,9 @@ font-weight: bold ;
 outline: 0;
 color: #2A1919;
 
-     -webkit-box-shadow: inset 2px 3px 74px 0px rgba(0,0,0,0.75);
--moz-box-shadow: inset 2px 3px 74px 0px rgba(0,0,0,0.75);
-box-shadow: inset 2px 3px 74px 0px rgba(0,0,0,0.75);
+     -webkit-box-shadow: inset 2px 3px 74px 0px rgba( 28, 132, 153,0.75);
+-moz-box-shadow: inset 2px 3px 74px 0px rgba( 28, 132, 153,0.75);
+box-shadow: inset 2px 3px 74px 0px rgba( 28, 132, 153,0.75);
 transition: all 0.3s;
 }
  
@@ -154,13 +154,13 @@ transition: all 0.3s;
  
 .btn-6d-logo:hover {
     background: rgb( 28, 132, 153);
-    border: 3px solid rgb( 28, 132, 153);
+    border: 2px solid rgb( 28, 132, 153);
     color:#fff;
     outline:0;
 
 }
 .btn-6d-logo:active{
-border: medium solid transparent;
+border: 2px solid transparent;
      -webkit-box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
 -moz-box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
 box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
@@ -274,12 +274,12 @@ color: #252323;
 }
 .scary {
     font-family: 'Raleway',sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     padding-top: 50px;
 }
 .help {
     font-family: 'Raleway',sans-serif;
-    font-size: 3.0em;
+    font-size: 2.5em;
     font-weight: bolder;
 }
 .tmd-int {
@@ -367,11 +367,13 @@ border-top: 2px solid #e7e7e7;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 .trusted {
-    font-size: 2.0em;
-    padding-bottom: 1.5em;
+font-size: 1.8em;
+padding-bottom: 1.5em;
 }
 .centeredh{
     text-align: left;
+margin-left: 1.8em;
+font-size: 22px !important;
 }
 @media(max-width:767px){
     .voffset6 {
@@ -457,5 +459,9 @@ a u{
     background: rgba(255,255,255,0.8);
 }
 .resize{
-    max-height: 142.5px;
+    max-height: 120px;
+margin-left: 2em;
+}
+.padding-bt{
+    padding-bottom:40px;
 }
