@@ -169,15 +169,14 @@ box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
 }
 
 .btn-6d-logo-about {
-   border: 3px solid rgb( 28, 132, 153);
-   background: rgb( 28, 132, 153);
-   padding: 20px 60px;
-   font-size: 2em;
-   outline:0;
-   color:#fff;
-   transition:all 0.3s;
+border: 3px solid rgb( 28, 132, 153);
+background: rgb( 28, 132, 153);
+padding: 5px 40px;
+font-size: 1.9em;
+outline: 0;
+color: #fff;
+transition: all 0.3s;
 }
-
 .btn-6d-logo-about:active{
 border: medium solid transparent;
      -webkit-box-shadow: inset 10px 10px 70px -13px rgba(0,0,0,0.75);
