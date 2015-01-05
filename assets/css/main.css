@@ -239,7 +239,7 @@ li{
     background-size: cover;
     height:100vh;
     margin: 0 auto; 
-    width: 100%; 
+    width: 100vw; 
     margin-top:-30px;
     position: relative; 
    
@@ -457,7 +457,7 @@ margin-left: 0;
 .padding-bt{
     padding-bottom:40px;
 }
-.centerad{
+.row.centerad{
     margin-left: 11%;
     margin-right:11%;
 }
@@ -497,5 +497,11 @@ margin-left: 0;
     }
     .resize{
         margin:auto;
+    }
+    #intro-2{
+        height: 900px;
+    }
+    #intro{
+        
     }
 }
