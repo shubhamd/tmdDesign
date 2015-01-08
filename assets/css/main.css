@@ -19,8 +19,25 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     color: #333;
 }
+.navbar-default {
+background-image: none !important ;
+}
+.item{
+    background: #333;    
+    text-align: center;
+    height: 300px !important;
+}
+.img-li li { background: url('../img/red.png') no-repeat 7px 7px transparent;
+list-style-type: none;
+padding: 7px 0px 1px 70px;
+vertical-align: middle;
+}
 
-
+.img-li li:nth-child(odd) {background: url('../img/nred.png') no-repeat 7px 7px transparent;
+list-style-type: none;
+padding: 7px 0px 1px 70px;
+vertical-align: middle;
+}
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
@@ -382,6 +399,16 @@ padding-bottom: 1.5em;
 .centeredh{
     text-align: left;
 
+font-size: 22px !important;
+}
+.centered-h{
+    text-align: left;
+    line-height: 1.5em;
+font-size: 22px !important;
+}
+.centered-head{
+    text-align: center;
+    line-height: 1.5em;
 font-size: 22px !important;
 }
 
