@@ -53,4 +53,20 @@ $('.navbar').scrollupbar();
       		}); 
    		}); 
 	});
+	$(document).ready(function(){
+   // cache the window object
+   $window = $(window);
+ 
+   		$('div[data-type="background3"]').each(function(){
+     // declare the variable to affect the defined data-type
+	   		var $scroll = $(this);
+	                     
+	      	$(window).scroll(function() {
+	        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
+	        yPos+=400;
+	        var coords = '50% '+ yPos + 'px';
+	        $scroll.css({ backgroundPosition: coords });    
+      		}); 
+   		}); 
+	});
 	
