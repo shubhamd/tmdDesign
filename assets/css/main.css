@@ -468,7 +468,7 @@ a u{
     color: rgb( 28, 132, 153);
 }
 #intro-2 { 
-    background: url(http://webtest.cnsrisk.com/wp-content/uploads/2013/06/Delhi-Street-e1371908175916-1024x7681.jpg) 70% 0 fixed no-repeat; 
+    background: url(../img/dehli.png) 70% 0 fixed no-repeat; 
     background-size: cover;
     height: 700px;  
     margin: 0 auto; 
@@ -519,7 +519,14 @@ margin-left: 0;
     color: #fff;
 }
 .tmline{
-    width: 100%;
+    background: url(../img/timeline.png) 50% 0 fixed no-repeat; 
+    
+    height: 900px;  
+    
+    margin-top:10px;
+    position: relative; 
+   
+    padding: 100px 0;
 }
 @media(max-width:1199px){
     .ext-padding{
@@ -539,9 +546,12 @@ margin-left: 0;
 
 
 @media(max-width:767px){
+    .tmline{
+        
+    
+    }
     .ext-padding{
-        margin-right: 0;
-        margin-left: 0;
+        
     }
     .voffset9 {
         margin-top: 10px;
@@ -559,7 +569,8 @@ margin-left: 0;
     #intro-2{
         height: 900px;
     }
-    #intro{
-        
+    #intro {
+        background-size: 100%;
+        height: 200px;
     }
 }
