@@ -49,7 +49,7 @@ $('.navbar').scrollupbar();
 	      	$(window).scroll(function() {
 	        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
 	        yPos-=60;
-	        var coords = '70% '+ yPos + 'px';
+	        var coords = '53% '+ yPos + 'px';
 	        $scroll.css({ backgroundPosition: coords });    
       		}); 
    		}); 

@@ -281,7 +281,7 @@ color: #252323;
     font-size: 2em;
     color:#fff;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    margin-top: 1em;
+    margin-top: -2em;
 
 }
 .imgtext-2{
@@ -501,13 +501,13 @@ a u{
     height: 3em;
 }
 #intro-4 { 
-    background: url(../img/hiw.png) 70% 0 fixed no-repeat; 
+    background: url(../img/hiw.png) 53% 0 fixed no-repeat; 
     background-size: cover;
     background-position-y:-60px;
-    height: 700px;  
+    height: 100vh;  
     margin: 0 auto; 
     width: 100%; 
-    margin-top:-100px;
+    margin-top:-10px;
     position: relative; 
    
     padding: 100px 0;
