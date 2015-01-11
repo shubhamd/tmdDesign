@@ -1,10 +1,11 @@
+if(!$(".tmline"))
 $(function(){	
 
         var $window = $(window);
 	var scrollTime = 1.2;
 	var scrollDistance = 170;
 
-	$window.on("mousewheel DOMMouseScroll", function(event){
+	$window.on("mousewheel DOMMouseScroll .tmline", function(event){
 
 		event.preventDefault();	
 
@@ -32,6 +33,22 @@ $('.navbar').scrollupbar();
 	                     
 	      	$(window).scroll(function() {
 	        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
+	        var coords = '53% '+ yPos + 'px';
+	        $scroll.css({ backgroundPosition: coords });    
+      		}); 
+   		}); 
+	});
+	 $(document).ready(function(){
+   // cache the window object
+   $window = $(window);
+ 	
+   		$('div[data-type="background5"]').each(function(){
+     // declare the variable to affect the defined data-type
+	   		var $scroll = $(this);
+	                     
+	      	$(window).scroll(function() {
+	        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
+	        yPos-=60;
 	        var coords = '70% '+ yPos + 'px';
 	        $scroll.css({ backgroundPosition: coords });    
       		}); 
