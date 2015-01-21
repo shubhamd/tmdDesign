@@ -263,6 +263,21 @@ li{
    
     padding: 100px 0;
 }
+.intro-message1{
+    padding-top: 0em;
+    padding-bottom:0em;
+}
+#intro8 { 
+    background: url(../img/delhi_1024.png) 53% 0 fixed no-repeat; 
+    background-size: cover;
+    height:100vh;
+    margin: 0 auto; 
+    width: 100vw; 
+    margin-top:-30px;
+    position: relative; 
+   
+    padding: 100px 0;
+}
 @media(min-width:768px)and(max-width:991px){
     .navbar > .container .navbar-brand {
         margin-left: -35px;
@@ -475,7 +490,17 @@ font-size: 1.6em;
 padding-bottom: 20px;
 }
 
-
+.container1{
+    background: rgba(255,255,255,.6);
+    margin-top: 1em;
+}
+.md{
+    color:rgb( 28, 132, 153);;
+}
+.tmdbld{
+    font-size: 5em;
+    font-weight: bold ;
+}
 .tmd-int-1{
     font-size: 1.3em ;
     color: rgb( 28, 132, 153);
